@@ -1,20 +1,17 @@
 ---
 title: Smallest possible transparent PNG
 description: An archived version of Gareth Rees' article on how to make the
-  smallest possible PNG.
+  smallest possible PNG. Originally published November 15th, 2007.
 pubDate: 2026-09-02T22:20:00.000+02:00
-updatedDate: 2026-09-02T22:20:00.000+02:00
 ---
-(Originally published 2007-11-15)
 
-> Back in 2007, [Gareth Rees](mailto:gdr@garethrees.org) made an amazing [article][article_url] ([archived][archived_url] on `2023-10-28T07:28:47Z`) on how to make the smallest possible transparent PNG and the byte-level reasoning behind it. Since then, Gareth's website has seemingly disappeared off the internet, with only a few archives remaining. I am therefore putting the article up on my website to keep it alive for others to read, and it has also been archived to [a GitHub repository][gh_repo].
+> Back in 2007, [Gareth Rees](mailto:gdr@garethrees.org) made an amazing [article][article_url] ([archived][archived_url] on `2023-10-28T07:28:47Z`) on how to make the smallest possible transparent PNG and the byte-level reasoning behind it. Since then, Gareth's website has seemingly disappeared off the internet, with only a few archives remaining. I am therefore putting the article up on my website to keep it alive for others to read, and it has also been archived to [a GitHub repository][gh_repo] along with all the python code in a single script.
 
 [article_url]: https://garethrees.org/2007/11/14/pngcrush/
 [archived_url]: https://web.archive.org/web/20231028072847/https://garethrees.org/2007/11/14/pngcrush/
 [gh_repo]: https://github.com/theS1LV3R/67bytepng
 
-A detailed look at the encoding of bitmap images in the PNG file format, leading up to the
-discovery of the smallest possible transparent PNG, only 67 bytes long.
+A detailed look at the encoding of bitmap images in the PNG file format, leading up to the discovery of the smallest possible transparent PNG, only 67 bytes long.
 
 [This discussion][rfc_2397_discussion] at [drj11’s blog][drj11_blog] raises the question of how small is the smallest [Portable Network Graphics][libpng_pub] (PNG) image? Starting out with general principles, it seems likely that we want the smallest possible image (PNG format doesn’t allow empty images, so it’s going to have to be 1×1), with the smallest number of colour channels (PNG supports greyscale images, with a single colour channel per pixel) and the smallest bit depth per channel (PNG supports 1-bit channels).
 
