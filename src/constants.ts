@@ -74,6 +74,7 @@ export const RANDOM_LINKS: Link[] = [
   },
 ];
 
+// https://cyber.dabamos.de/88x31/, https://yesterweb.org/graphics/buttons
 export const BADGES: Badge[] = [
   {
     image: "/88x31/best_viewed_with_pepsi.gif",
