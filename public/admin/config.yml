@@ -4,7 +4,7 @@ public_folder: /uploaded
 
 backend:
   name: github
-  repo: s1lv3r-website/astro-rewrite
+  repo: theS1LV3R/s1lv3r-website-astro-rewrite
   branch: master
   squash_merges: true
 
