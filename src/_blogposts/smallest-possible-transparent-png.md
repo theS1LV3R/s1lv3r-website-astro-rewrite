@@ -2,10 +2,12 @@
 title: Smallest possible transparent PNG
 description: An archived version of Gareth Rees' article on how to make the
   smallest possible PNG.
-pubDate: 2026-09-02T21:59:00.000+02:00
-updatedDate: 2007-11-15T22:58:00.000+01:00
+pubDate: 2026-09-02T22:20:00.000+02:00
+updatedDate: 2026-09-02T22:20:00.000+02:00
 ---
-> Back in 2007, [Gareth Rees](mailto:gdr@garethrees.org) made an amazing [article][article_url] ([archived][archived_url] on `2023-10-28T07:28:47Z`) on how to make the smallest possible PNG, and the byte-level reasoning behind it. Since then, Gareth's website has seemingly disappeared off the internet, with only a few archives remaining. I am therefore putting the article up on my website to keep it alive for others to read. It has also been archived to [a GitHub repository][gh_repo].
+(Originally published 2007-11-15)
+
+> Back in 2007, [Gareth Rees](mailto:gdr@garethrees.org) made an amazing [article][article_url] ([archived][archived_url] on `2023-10-28T07:28:47Z`) on how to make the smallest possible transparent PNG and the byte-level reasoning behind it. Since then, Gareth's website has seemingly disappeared off the internet, with only a few archives remaining. I am therefore putting the article up on my website to keep it alive for others to read, and it has also been archived to [a GitHub repository][gh_repo].
 
 [article_url]: https://garethrees.org/2007/11/14/pngcrush/
 [archived_url]: https://web.archive.org/web/20231028072847/https://garethrees.org/2007/11/14/pngcrush/
