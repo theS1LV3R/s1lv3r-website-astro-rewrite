@@ -3,9 +3,12 @@ title: Smallest possible transparent PNG
 description: An archived version of Gareth Rees' article on how to make the
   smallest possible PNG. Originally published November 15th, 2007.
 pubDate: 2026-09-02T22:20:00.000+02:00
+updatedDate: 2026-09-03T19:17:00.000+02:00
 ---
 
 > Back in 2007, [Gareth Rees](mailto:gdr@garethrees.org) made an amazing [article][article_url] ([archived][archived_url] on `2023-10-28T07:28:47Z`) on how to make the smallest possible transparent PNG and the byte-level reasoning behind it. Since then, Gareth's website has seemingly disappeared off the internet, with only a few archives remaining. I am therefore putting the article up on my website to keep it alive for others to read, and it has also been archived to [a GitHub repository][gh_repo] along with all the python code in a single script.
+> 
+> All the URLs that are referenced in this post are using the closest archived version to when the article itself was written in November of 2007.
 
 [article_url]: https://garethrees.org/2007/11/14/pngcrush/
 [archived_url]: https://web.archive.org/web/20231028072847/https://garethrees.org/2007/11/14/pngcrush/
@@ -176,7 +179,9 @@ The reason why flushing the encoding stream inserts a zero-length non-compressio
 ### Update 2009-07-01
 
 There’s a systematic reason why zlib fails to find the best compression for this file. In
-[`deflate.c`][google_deflate.c_codesearch] there’s even a comment to this effect:
+[`deflate.c`][deflate.c] there’s even a comment to this effect:
+
+> **Editors note:** This link originally pointed to [an archive.org URL of Google Codesearch][google_deflate.c_codesearch]. This archived link has seemingly broken (as has every earlier archive link), and I have therefore replaced it with a git.kernel.org link pointing to the same file at the same date that this was written originally.
 
 ```plain
 /* To simplify the code, we prevent matches with the string of window index 0. */
@@ -189,15 +194,16 @@ If I read the code correctly, zlib never finds a repeat that starts on byte 0 of
 
 [^2]: A puzzled reader e-mailed me to query this explanation. It is indeed slightly confusing because there a two-step encoding here. Refer to the [DEFLATE Specification][deflate_spec]. In section 3.2.5 you’ll see that in the encoding of 〈length, backward distance〉 pairs, a length of 4 is first encoded as the value 258 (to merge it into the same alphabet as literal bytes). Then in section 3.2.6, you’ll see that in the default Huffman coding tables (which are the ones in force in this case), codes from this merged alphabet in the range 256 through 279 are encoded in 7 bits as 0000000 through 0010111. So 256 is encoded as 0000000, 257 as 0000001, and 258 as 0000010.
 
-[deflate_spec]: https://web.archive.org/web/20231028072847/http://www.ietf.org/rfc/rfc1951.txt
-[rfc_2397_discussion]: https://web.archive.org/web/20231028072847/http://drj11.wordpress.com/2007/11/14/using-the-rfc-2397-data-url-scheme-to-micro-optimise-small-images/
-[drj11_blog]: https://web.archive.org/web/20231028072847/http://drj11.wordpress.com/
-[png_spec]: https://web.archive.org/web/20231028072847/http://www.w3.org/TR/PNG/
-[libpng_pub]: https://web.archive.org/web/20231028072847/http://libpng.org/pub/png/
-[png_ihdr_chunk]: https://web.archive.org/web/20231028072847/http://www.w3.org/TR/PNG/#11IHDR
-[png_idat_chunk]: https://web.archive.org/web/20231028072847/http://www.w3.org/TR/PNG/#11ITAT
-[png_iend_chunk]: https://web.archive.org/web/20231028072847/http://www.w3.org/TR/PNG/#11IEND
-[zlib_spec]: https://web.archive.org/web/20231028072847/http://www.ietf.org/rfc/rfc1950.txt
-[png_spec_scanline_serialization]: https://web.archive.org/web/20231028072847/http://www.w3.org/TR/PNG/#4Concepts.EncodingScanlineAbs
-[slashdot_comment]: https://web.archive.org/web/20231028072847/http://slashdot.org/comments.pl?sid=2200&cid=1574036
+[deflate_spec]: https://web.archive.org/web/20071024114743/https://www.ietf.org/rfc/rfc1951.txt
+[rfc_2397_discussion]: https://web.archive.org/web/20071121053252/http://drj11.wordpress.com/2007/11/14/using-the-rfc-2397-data-url-scheme-to-micro-optimise-small-images/
+[drj11_blog]: https://web.archive.org/web/20071105084616/http://drj11.wordpress.com/
+[png_spec]: https://web.archive.org/web/20071031231526/http://www.w3.org/TR/PNG/
+[libpng_pub]: https://web.archive.org/web/20071021071038/http://www.libpng.org/pub/png/
+[png_ihdr_chunk]: https://web.archive.org/web/20071031231526/http://www.w3.org/TR/PNG/#11IHDR
+[png_idat_chunk]: https://web.archive.org/web/20071031231526/http://www.w3.org/TR/PNG/#11ITAT
+[png_iend_chunk]: https://web.archive.org/web/20071031231526/http://www.w3.org/TR/PNG/#11IEND
+[zlib_spec]: https://web.archive.org/web/20071028072402/https://www.ietf.org/rfc/rfc1950.txt
+[png_spec_scanline_serialization]: https://web.archive.org/web/20071031231526/http://www.w3.org/TR/PNG/#4Concepts.EncodingScanlineAbs
+[slashdot_comment]: https://web.archive.org/web/20141117083121/http://slashdot.org/comments.pl?sid=2200&cid=1574036
+[deflate.c]: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/lib/zlib_deflate/deflate.c?id=cc0bad7552308e8905d6ea56e6b7811fa67e716d#n1135
 [google_deflate.c_codesearch]: https://web.archive.org/web/20231028072847/http://www.google.com/codesearch/p?sa=N&cd=2&ct=rc#e_ObwTAVPyo/modules/zlib/src/deflate.c&q=file:deflate.c
