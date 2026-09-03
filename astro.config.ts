@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig } from "astro/config";
+import { defineConfig, svgoOptimizer } from "astro/config";
 
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
@@ -8,6 +8,7 @@ import sectionize from "remark-sectionize";
 import externalLinks, { type Options as externalLinksOptions } from "rehype-external-links";
 import rehypePrettyCode, { type Options as rehypePrettyCodeOptions } from "rehype-pretty-code"
 import { transformerCopyButton } from "@rehype-pretty/transformers";
+import { unified } from "@astrojs/markdown-remark";
 
 
 // https://astro.build/config
@@ -28,33 +29,35 @@ export default defineConfig({
   },
   devToolbar: { enabled: false },
   experimental: {
-    svgo: true,
+    svgOptimizer: svgoOptimizer(),
   },
   markdown: {
     syntaxHighlight: false,
-    remarkPlugins: [sectionize],
-    rehypePlugins: [
-      [
-        externalLinks,
-        {
-          rel: ["noopener", "noreferrer"],
-          target: "_blank"
-        } as externalLinksOptions
-      ],
-      [
-        rehypePrettyCode,
-        {
-          theme: "dark-plus",
-          defaultLang: "plaintext",
-          bypassInlineCode: true,
-          transformers: [
-            transformerCopyButton({
-              visibility: "hover",
-              feedbackDuration: 2_500,
-            })
-          ]
-        } as rehypePrettyCodeOptions
-      ],
-    ]
+    processor: unified({
+      remarkPlugins: [sectionize],
+      rehypePlugins: [
+        [
+          externalLinks,
+          {
+            rel: ["noopener", "noreferrer"],
+            target: "_blank"
+          } as externalLinksOptions
+        ],
+        [
+          rehypePrettyCode,
+          {
+            theme: "dark-plus",
+            defaultLang: "plaintext",
+            bypassInlineCode: true,
+            transformers: [
+              transformerCopyButton({
+                visibility: "hover",
+                feedbackDuration: 2_500,
+              })
+            ]
+          } as rehypePrettyCodeOptions
+        ],
+      ]
+    })
   },
 });
