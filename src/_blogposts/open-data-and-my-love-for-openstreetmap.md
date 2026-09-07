@@ -1,6 +1,6 @@
 ---
 title: Open data, and my love for OpenStreetMap
-pubDate: 2026-09-04T15:30:00.000+02:00
+pubDate: 2026-09-07T20:31:00.000+02:00
 ---
 It should come as no surprise to anyone that I love open data. As a self-proclaimed hacker[^1], I love being able to create whatever I want with freely available data. I love being able to modify and to help contribute to massive datasets, even if that is only in smaller degrees. The Norwegian government even has a dedicated data page with [over 1600 open datasets](https://data.norge.no/search-all?opendata=true), free for anyone to use.
 
