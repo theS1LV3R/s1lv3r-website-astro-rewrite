@@ -4,6 +4,7 @@ description: An archived version of Gareth Rees' article on how to make the
   smallest possible PNG. Originally published November 15th, 2007.
 pubDate: 2026-09-02T22:20:00.000+02:00
 updatedDate: 2026-09-03T19:17:00.000+02:00
+published: true
 ---
 
 > Back in 2007, [Gareth Rees](mailto:gdr@garethrees.org) made an amazing [article][article_url] ([archived][archived_url] on `2023-10-28T07:28:47Z`) on how to make the smallest possible transparent PNG and the byte-level reasoning behind it. Since then, Gareth's website has seemingly disappeared off the internet, with only a few archives remaining. I am therefore putting the article up on my website to keep it alive for others to read, and it has also been archived to [a GitHub repository][gh_repo] along with all the python code in a single script.

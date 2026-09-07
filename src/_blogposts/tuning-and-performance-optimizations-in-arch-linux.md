@@ -1,6 +1,7 @@
 ---
 title: Tuning and performance optimizations in Arch Linux
 pubDate: 2025-12-07T01:29:00.000+01:00
+published: true
 ---
 
 Recently, I decided to read up on the Arch Wiki because I was bored, and I decided to read on the [Improving performance](https://wiki.archlinux.org/title/Improving_performance) pages. I found some cool topics and settings, this post is simply an overview of the ones I use and have configured, and others that don't come from the wiki at all but that I have found *somewhere* on the internet.

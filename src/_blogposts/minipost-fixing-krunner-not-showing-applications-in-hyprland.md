@@ -1,6 +1,7 @@
 ---
 title: "[Minipost] Fixing krunner not showing applications in hyprland"
 pubDate: 2025-12-07T23:22:00.000+01:00
+published: true
 ---
 
 Quick one: If on hyprland (or likely any non-plasma WM/DE), krunner is likely to not be showing installed desktop applications. This is caused by a missing symlink in the `/etc/xdk/menus` directory.

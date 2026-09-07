@@ -51,14 +51,14 @@ export const RANDOM_LINKS: Link[] = [
   {
     icon: LinkIcon,
     title: "A Cypherpunk's Manifesto",
-    link: "/cypherpunk.txt",
+    link: "/uploads/cypherpunk.txt",
     description: '"A Cypherpunk\'s Manifesto" by Eric Hughes',
   },
   {
     icon: LinkIcon,
     title: "Hacker Manifesto",
     description: '"The Conscience of a Hacker" by Loyd Blankenship',
-    link: "/the-conscience-of-a-hacker.txt"
+    link: "/uploads/the-conscience-of-a-hacker.txt"
   },
   {
     icon: LinkIcon,
@@ -77,7 +77,7 @@ export const RANDOM_LINKS: Link[] = [
 // https://cyber.dabamos.de/88x31/, https://yesterweb.org/graphics/buttons
 export const BADGES: Badge[] = [
   {
-    image: "/88x31/best_viewed_with_pepsi.gif",
+    image: "/resources/88x31/best_viewed_with_pepsi.gif",
     alt: "This Site Best Viewed With Pepsi",
   },
   {
@@ -86,26 +86,26 @@ export const BADGES: Badge[] = [
     target: "https://yesterweb.org/no-to-web3/",
   },
   {
-    image: "/88x31/rss.png",
+    image: "/resources/88x31/rss.png",
     alt: "RSS Feed",
     target: "/blog/feed.rss",
   },
   {
-    image: "/88x31/not_a_person.png",
+    image: "/resources/88x31/not_a_person.png",
     alt: "Not a Person",
     target: "https://voidgoddess.org/emptyspaces/notaperson/",
   },
   {
-    image: "/88x31/this_machine_kills_fascists.png",
+    image: "/resources/88x31/this_machine_kills_fascists.png",
     alt: "This Machine Kills Fascists",
   },
   {
-    image: "/88x31/pride-transgender.png", // https://qalle.neocities.org/88x31/
+    image: "/resources/88x31/pride-transgender.png", // https://qalle.neocities.org/88x31/
     alt: "Transgender flag",
     target: "https://en.pronouns.page/@thes1lv3r",
   },
   {
-    image: "/88x31/s1lv3r.png",
+    image: "/resources/88x31/s1lv3r.png",
     alt: "S1LV3R (my own 88x31)",
   },
   {

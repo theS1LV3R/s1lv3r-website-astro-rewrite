@@ -1,6 +1,7 @@
 ---
 title: Arma 3 head tracking on linux using OpenTrack
 pubDate: 2026-01-27T21:05:00.000+01:00
+published: true
 ---
 I love playing Arma 3, and wanted to get myself a head tracking setup like a [TrackIR](https://www.trackir.com/) for more enjoyable gameplay. However due to it being decently expensive for my student self at €219, I bought a used [PlayStation Eye](https://en.wikipedia.org/wiki/PlayStation_Eye) camera for ~€20 instead. This camera, paired with a piece of software called [OpenTrack](https://github.com/opentrack/opentrack) allows me to get *basically* the same experience as if I'd gotten a TrackIR instead :)
 

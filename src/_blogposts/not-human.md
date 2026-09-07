@@ -5,6 +5,7 @@ updatedDate: 2026-07-28T10:31:00.000+02:00
 socials:
   - site: bsky
     url: https://bsky.app/profile/did:plc:t4orz775m4rskkwakd3nogxm/post/3mpf4z56yjk2c
+published: true
 ---
 If you've been on my website before, you might've seen the "Not a Person" 88x31 image in the footer. I added this because I do not identify with being human.
 

@@ -1,6 +1,7 @@
 ---
 title: Automatic LetsEncrypt certificates with Tailscale and Traefik in Docker
 pubDate: 2025-12-26T02:30:00.000+01:00
+published: true
 ---
 
 > Just want it to work? See [#The Solution](#the-solution). Want to know _why_ it works, along with some backstory? Read on :)

@@ -3,6 +3,7 @@ title: Installing Arch Linux on BTRFS with LUKS and automatic TPM2 unlocking
 description: My experience with installing Arch Linux on my Framework 13 with LUKS, BTRFS, and automatic unlocking using TPM2 similar to what BitLocker does.
 pubDate: 2025-11-25T22:57:00.000+01:00
 updatedDate: 2025-12-12T18:19:00.000+01:00
+published: true
 ---
 
 I recently got a new laptop, and figured I'd install Arch on it, just to have a functional system asap. Now that I have more time to tinker however, I have decided to re-install to get full disk encryption[^1]. That's what this blog post is!
@@ -202,8 +203,8 @@ So far I've only set up signing of the images themselves (which can _technically
 
 For pacman, this is luckily decently simple. I'll need to install two hooks to `/etc/pacman.d/hooks/`:
 
-- [`80-sign-systemd-boot.hook`](/uploaded/80-sign-systemd-boot.hook) - As the name implies, this hook signs the systemd-boot efi binary.
-- [`95-update-systemd-boot.hook`](/uploaded/95-update-systemd-boot.hook) - This restarts the systemd-boot updater, ensuring the new version of the binary is put into place immediately
+- [`80-sign-systemd-boot.hook`](/uploads/80-sign-systemd-boot.hook) - As the name implies, this hook signs the systemd-boot efi binary.
+- [`95-update-systemd-boot.hook`](/uploads/95-update-systemd-boot.hook) - This restarts the systemd-boot updater, ensuring the new version of the binary is put into place immediately
 
 For simplicity's sake I've just uploaded the full files for download instead of putting them into the post itself.
 

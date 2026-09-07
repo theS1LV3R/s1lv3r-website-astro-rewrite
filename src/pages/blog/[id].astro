@@ -4,14 +4,15 @@ import ToC from "@components/ToC.astro";
 import Blogpost from "@layouts/Blogpost.astro";
 
 export async function getStaticPaths() {
-  const posts = await getCollection("blog");
+  const posts = (await getCollection("blog")).filter(
+    (post) => post.data.published,
+  );
 
   return posts.map((post) => ({
     params: { id: post.id },
     props: { post },
   }));
 }
-
 
 const { post } = Astro.props;
 const { Content, headings } = await render(post);
@@ -342,11 +343,11 @@ const dateFormat = (_date: Date): string => {
       Posted on: {dateFormat(post.data.pubDate)}
       {
         post.data.updatedDate && post.data.updatedDate > post.data.pubDate && (
-            <>
-              <br />
-              Last updated: {dateFormat(post.data.updatedDate)}
-            </>
-          )
+          <>
+            <br />
+            Last updated: {dateFormat(post.data.updatedDate)}
+          </>
+        )
       }
     </span>
     {
@@ -356,7 +357,7 @@ const dateFormat = (_date: Date): string => {
           <span title="Social links">
             Discuss on:
             <ul id="socials-links">
-              {post.data.socials.map(({site, url}) => (
+              {post.data.socials.map(({ site, url }) => (
                 <li>
                   <a href={url} target="_blank" rel="noopener noreferrer">
                     {site}
@@ -370,7 +371,9 @@ const dateFormat = (_date: Date): string => {
     }
     {
       post.data.description && (
-        <p id="desc" title="Post description">{post.data.description}</p>
+        <p id="desc" title="Post description">
+          {post.data.description}
+        </p>
       )
     }
     <ToC headings={headings} />

@@ -3,9 +3,9 @@ import { getCollection } from "astro:content";
 import { getDescription } from "@/utils";
 import Layout from "@layouts/Layout.astro";
 
-const posts = (await getCollection("blog")).sort((a, b) =>
-  a.data.pubDate > b.data.pubDate ? -1 : 1,
-);
+const posts = (await getCollection("blog"))
+  .filter((post) => post.data.published)
+  .sort((a, b) => (a.data.pubDate > b.data.pubDate ? -1 : 1));
 
 const dateToIso = (date: Date) => date.toISOString().split("T")[0];
 ---
@@ -71,8 +71,9 @@ const dateToIso = (date: Date) => date.toISOString().split("T")[0];
 
 <Layout title="Blogposts">
   <p>
-    In here I'll kinda just post whatever I feel like :) There might be technical stuff,
-    non-technical, whatever I come over in my journeys across the internet :3
+    In here I'll kinda just post whatever I feel like :) There might be
+    technical stuff, non-technical, whatever I come over in my journeys across
+    the internet :3
   </p>
   <p>
     Want to subscribe with RSS? See
