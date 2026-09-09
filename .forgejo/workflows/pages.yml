@@ -28,7 +28,7 @@ jobs:
           pnpm build
           echo ::endgroup::
 
-      - name: Upload to codeberg.page
+      - name: Upload to webhost
         uses: https://codeberg.org/git-pages/action@v2
         with:
           site: https://silversys.dev/
