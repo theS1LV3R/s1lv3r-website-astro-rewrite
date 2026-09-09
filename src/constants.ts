@@ -105,6 +105,11 @@ export const BADGES: Badge[] = [
     target: "https://en.pronouns.page/@thes1lv3r",
   },
   {
+    image: "https://grebedoc.dev/88x31-homu.gif",
+    alt: "served by Grebedoc",
+    target: "https://grebedoc.dev",
+  },
+  {
     image: "/resources/88x31/s1lv3r.png",
     alt: "S1LV3R (my own 88x31)",
   },
