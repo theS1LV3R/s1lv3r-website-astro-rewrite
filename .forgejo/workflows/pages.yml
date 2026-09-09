@@ -1,0 +1,37 @@
+name: Deploy Codeberg Pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: docker
+    container: { image: node:lts }
+    steps:
+      - name: Checkout your repository using git
+        uses: actions/checkout@v7
+
+      - name: Build
+        shell: bash
+        run: |
+          echo ::group::Install PNPM
+          npm install --global pnpm
+          echo ::endgroup::
+
+          echo ::group::Install packages
+          pnpm install --frozen-lockfile
+          echo ::endgroup::
+
+          echo ::group::Build
+          pnpm build
+          echo ::endgroup::
+
+      - name: Upload to codeberg.page
+        uses: https://codeberg.org/git-pages/action@v2
+        with:
+          site: https://silversys.dev/
+          server: grebedoc.dev
+          password: ${{ secrets.GREBEDOC_PASSWORD }}
+          source: dist/
