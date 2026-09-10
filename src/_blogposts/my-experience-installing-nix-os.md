@@ -1,12 +1,13 @@
 ---
 title: My experience installing Nix OS
 pubDate: 2025-12-06T13:41:00.000+01:00
+updatedDate: 2026-09-10T07:54:07+02:00
 published: true
 ---
 
 After some friends of mine started using and recommending [NixOS](https://nixos.org) to me I eventually got tempted enough by the sweet, sweet reproducibility and git-managed system that I decided to give it a try.
 
-At first, I wasn't a massive fan. Configurations were archaic, the nix configuration language had some... quirks (?) that I weren't a big fan of (more on that at [#Nix language quirks](#nix-language-quirks), and configuring flakes for git-managed configurations wasn't exactly intuitive.
+At first, I wasn't a massive fan. Configurations were archaic, the nix configuration language had some... quirks (?) that I weren't a big fan of (more on that at [#Nix language quirks](#nix-language-quirks)), and configuring flakes for git-managed configurations wasn't exactly intuitive.
 
 Later though, I did start getting a bit used to the system. A lot of that was thanks to my friend [Soni](https://github.com/soni801) who helped me for hours on end with setting up the system, and answered every question I annoyed him with in our DMs. Thanks a lot :3
 
