@@ -27,10 +27,10 @@ import { BADGES } from "@/constants";
 </style>
 
 <div id="wrapper">
-  <ul title="88x31 badges">
+  <ul aria-label="88x31 badges">
     {
       BADGES.map(({ image, target, alt }) => (
-        <li>
+        <li title={alt}>
           <a href={target} target="_blank" rel="noopener noreferrer">
             <img src={image} alt={alt} />
           </a>
