@@ -72,6 +72,12 @@ export const RANDOM_LINKS: Link[] = [
     link: "https://corax.team",
     description: "The CTF team I'm a member of",
   },
+  {
+    icon: LinkIcon,
+    title: "write on my page",
+    link: "https://www.yourworldoftext.com/~silversys/",
+    description: "come write on my \"your world of text\" page",
+  },
 ];
 
 // https://cyber.dabamos.de/88x31/, https://yesterweb.org/graphics/buttons
