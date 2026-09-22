@@ -78,6 +78,12 @@ export const RANDOM_LINKS: Link[] = [
     link: "https://www.yourworldoftext.com/~silversys/",
     description: "come write on my \"your world of text\" page",
   },
+  {
+    icon: LinkIcon,
+    title: "MMAcevedo, the standard test brain image",
+    link: "https://qntm.org/mmacevedo",
+    description: "A fictional story about a human brain scan, and the reason I dislike the concept of simulating brains."
+  }
 ];
 
 // https://cyber.dabamos.de/88x31/, https://yesterweb.org/graphics/buttons
