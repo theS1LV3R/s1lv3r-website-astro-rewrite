@@ -122,6 +122,7 @@ const resolvedTitle = title ? `${title} | ${SITE_NAME}` : SITE_NAME;
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="canonical" href={Astro.url} />
+    <meta name="robots" content="noai, noimageai">
 
     <title>{resolvedTitle}</title>
     <meta name="title" content={title ?? SITE_NAME} />
