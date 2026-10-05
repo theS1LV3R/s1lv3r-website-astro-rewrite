@@ -7,13 +7,13 @@ updatedDate: 2026-09-03T19:17:00.000+02:00
 published: true
 ---
 
-> Back in 2007, [Gareth Rees](mailto:gdr@garethrees.org) made an amazing [article][article_url] ([archived][archived_url] on `2023-10-28T07:28:47Z`) on how to make the smallest possible transparent PNG and the byte-level reasoning behind it. Since then, Gareth's website has seemingly disappeared off the internet, with only a few archives remaining. I am therefore putting the article up on my website to keep it alive for others to read, and it has also been archived to [a GitHub repository][gh_repo] along with all the python code in a single script.
+> Back in 2007, [Gareth Rees](mailto:gdr@garethrees.org) made an amazing [article][article_url] ([archived][archived_url] on `2023-10-28T07:28:47Z`) on how to make the smallest possible transparent PNG and the byte-level reasoning behind it. Since then, Gareth's website has seemingly disappeared off the internet, with only a few archives remaining. I am therefore putting the article up on my website to keep it alive for others to read, and it has also been archived to [a git repository][gh_repo] along with all the python code in a single script.
 > 
 > All the URLs that are referenced in this post are using the closest archived version to when the article itself was written in November of 2007.
 
 [article_url]: https://garethrees.org/2007/11/14/pngcrush/
 [archived_url]: https://web.archive.org/web/20231028072847/https://garethrees.org/2007/11/14/pngcrush/
-[gh_repo]: https://github.com/theS1LV3R/67bytepng
+[gh_repo]: https://codeberg.org/theS1LV3R/67bytepng/
 
 A detailed look at the encoding of bitmap images in the PNG file format, leading up to the discovery of the smallest possible transparent PNG, only 67 bytes long.
 
