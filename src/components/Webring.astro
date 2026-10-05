@@ -1,0 +1,71 @@
+---
+export interface Props {
+  ringTitle: string;
+  links: {
+    previousPage: string;
+    ringInfo: string;
+    randomPage?: string;
+    nextPage: string;
+  };
+  propWords?: {
+    previousPage?: string;
+    ringInfo?: string;
+    randomPage?: string;
+    nextPage?: string;
+  };
+}
+
+const { ringTitle, links, propWords } = Astro.props;
+
+const words = {
+  previousPage: propWords?.previousPage ?? "←",
+  ringInfo: propWords?.ringInfo ?? ringTitle,
+  randomPage: propWords?.randomPage ?? "(random)",
+  nextPage: propWords?.nextPage ?? "→",
+};
+---
+
+<style lang="scss">
+  p {
+    padding: 0;
+    margin: 0;
+  }
+</style>
+
+<p aria-title={ringTitle}>
+  <a
+    title="Previous page"
+    target="_blank"
+    rel="noopener noreferer"
+    href={links.previousPage}
+    set:html={words.previousPage}
+  />
+  {" "}
+  <a
+    title="Ring info"
+    target="_blank"
+    rel="noopener noreferer"
+    href={links.ringInfo}
+    set:html={words.ringInfo}
+  />
+  {" "}
+  {
+    links.randomPage && (
+      <a
+        title="Random page"
+        target="_blank"
+        rel="noopener noreferer"
+        href={links.randomPage}
+        set:html={words.randomPage}
+      />
+    )
+  }
+  {" "}
+  <a
+    title="Next page"
+    target="_blank"
+    rel="noopener noreferer"
+    href={links.nextPage}
+    set:html={words.nextPage}
+  />
+</p>

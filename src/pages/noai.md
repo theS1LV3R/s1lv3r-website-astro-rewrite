@@ -11,6 +11,10 @@ h2 {
   padding-top: 1rem;
 }
 
+sup {
+  font-size: 85%;
+}
+
 .unfinished {
   font-style: italic;
   opacity: 50%;
@@ -22,6 +26,10 @@ I am strongly opposed to any[^1] form of AI being used, especially generative AI
 [^1]: "Any" here generally means generative -- there are some _more valid_ uses for AI such as medical purposes (see ["FAQ / Counterpoints"](#faq--counterpoints)), but the jury is still out on those usecases as well.
 
 > **Note:** This document is not finished. Any grayed-out sections are yet to be started/finished.
+
+See also:
+
+- [Just Say No (to AI)](https://justsayno.ai/)
 
 ## Why?
 
@@ -42,7 +50,6 @@ There is also the big issue of the "dead internet theory". Chatbots are being us
 I used to be an avid user of ChatGPT back in 2022-2024. I used it for everything from generating quick bash scripts to writing professional emails. When I learned how bad AI really was (for all the reasons listed on this page), I stopped using it entirely. Since then I have noticed how much my AI use have impeded my own learning and creative abilities, and how difficult it has made things that were previously easy.
 
 I will admit that this is very subjective and not very good evidence, but from talking to my peers (again, subjective) I have found an overall decrease in "thinking capacity" compared to before AI exploded everywhere.
-
 
 <p class="unfinished">
   Creates a false narrative that creating something is easy, automated and doesn't require human input other than a prompt (i can just create this with AI in 10 minutes).

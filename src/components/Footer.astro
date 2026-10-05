@@ -1,37 +1,61 @@
 ---
 import EightyEightThirtyOne from "@/components/EightyEightThirtyOne.astro";
-
-const site = Astro.site!.host;
+import Webring from "@components/Webring.astro";
 ---
 
 <footer aria-label="Footer">
   <EightyEightThirtyOne />
 
   <div id="webrings" aria-label="Webrings">
-    <p aria-label="Roboring">
-      <a title="Previous page" href="https://stellophiliac.github.io/roboring/s1lv3r/previous">←</a>
-      <a title="Ring info" href="https://stellophiliac.github.io/roboring">roboring</a>
-      <a title="Next page" href="https://stellophiliac.github.io/roboring/s1lv3r/next">→</a>
-    </p>
+    <Webring
+      ringTitle="The Hacker Webring"
+      links={{
+        previousPage: "https://ring.acab.dev/prev/9bca8c5db3",
+        ringInfo: "https://ring.acab.dev",
+        nextPage: "https://ring.acab.dev/next/9bca8c5db3",
+      }}
+    />
 
-    <p aria-label="The Hacker Webring">
-      <a title="Previous page" href="https://ring.acab.dev/prev/9bca8c5db3">←</a>
-      <a title="Ring info" href="https://ring.acab.dev">The Hacker Webring</a>
-      <a title="Next page" href="https://ring.acab.dev/next/9bca8c5db3">→</a>
-    </p>
+    <Webring
+      ringTitle="no ai webring"
+      links={{
+        previousPage: "https://baccyflap.com/noai/?prv&s=slv",
+        ringInfo: "https://baccyflap.com/noai",
+        randomPage: "https://baccyflap.com/noai/?rnd",
+        nextPage: "https://baccyflap.com/noai/?nxt&s=slv",
+      }}
+      propWords={{
+        ringInfo: "no ai &#x1f6ab;&#129302; webring",
+        randomPage: "(&#x1F3B2;)",
+      }}
+    />
 
-    <!-- <p>
-      <a href=`https://webring.continuwuity.org/previous?host=${site}`>←</a>
-      <a href="https://webring.continuwuity.org/">Continuwuity</a>
-      <a href=`https://webring.continuwuity.org/next?host=${site}`>→</a>
-    </p> -->
+    <Webring
+      ringTitle="Roboring"
+      links={{
+        previousPage:
+          "https://stellophiliac.github.io/roboring/silversys/previous",
+        ringInfo: "https://stellophiliac.github.io/roboring",
+        nextPage: "https://stellophiliac.github.io/roboring/silversys/next",
+      }}
+      propWords={{
+        ringInfo: "roboring",
+      }}
+    />
   </div>
 
   <p id="disclosure">
-    Proudly written by me, myself, and I. No AI or slop generators here.
-    Opinions are my own and do not represent the views or opinions of past or
-    current employers. All rights reserved. Use of content on this site for AI
-    training or generation is strictly forbidden.
+    Copyright is bullshit, take what you want <a
+      title="License file"
+      href="https://codeberg.org/theS1LV3R/website/src/branch/main/LICENSE"
+      rel="noopener noreferrer"
+    >
+      unless you're a capitalist
+    </a>. Proudly written by me, myself, and I.
+    <br />
+    Opinions are my own and do not represent the views or opinions of past or current
+    employers.<br /> Use of content on this site for AI training or generation is
+    strictly forbidden.
     <br />
 
     <span id="ai-killer">
@@ -55,11 +79,6 @@ const site = Astro.site!.host;
     flex-direction: row;
     justify-content: space-evenly;
     margin: 1rem auto;
-
-    & > p {
-      padding: 0;
-      margin: 0;
-    }
   }
 
   #disclosure {
@@ -74,7 +93,7 @@ const site = Astro.site!.host;
     }
 
     #ai-killer {
-      font-size: 30%;
+      font-size: 10%;
     }
   }
 </style>
