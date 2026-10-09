@@ -145,4 +145,9 @@ export const BADGES: Badge[] = [
     alt: "ginger's 88x31 button",
     target: "https://gingershaped.computer/"
   },
+  {
+    image: "https://rejectconvenience.com/images/88x31/88x31.jpg",
+    alt: "reject convenience",
+    target: "https://rejectconvenience.com"
+  },
 ];
