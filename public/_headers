@@ -9,3 +9,6 @@
     Content-Security-Policy: upgrade-insecure-requests; block-all-mixed-content
     # Disable Google FLoC
     Permissions-Policy: interest-cohort=()
+
+/.well-known/matrix/*
+    Content-Type: application/json
