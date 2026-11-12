@@ -41,3 +41,5 @@ jobs:
           server: grebedoc.dev
           password: ${{ secrets.GREBEDOC_PASSWORD }}
           source: dist/
+          comment: ${{ forgejo.sha }}
+          strict: true # Fail immediately if there are errors
