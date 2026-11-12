@@ -28,6 +28,12 @@ jobs:
           pnpm build
           echo ::endgroup::
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: built-site
+          path: dist/
+
       - name: Upload to webhost
         uses: https://codeberg.org/git-pages/action@v2
         with:
