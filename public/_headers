@@ -1,5 +1,7 @@
-# Processed by codeberg pages
-/.well-known/matrix/*
+/.well-known/matrix/server
+    Content-Type: application/json; charset=utf-8
+
+/.well-known/matrix/client
     Content-Type: application/json; charset=utf-8
 
 /*
