@@ -5,6 +5,7 @@ import Matrix from "./components/icons/Matrix.astro";
 import Signal from "./components/icons/Signal.astro";
 import FediverseNocolor from "@components/icons/FediverseNocolor.astro";
 import type { Badge, Link } from "@/types";
+import Codeberg from "@components/icons/Codeberg.astro";
 
 export type AstroComponent = (_props: Record<string, any>) => any;
 
@@ -31,13 +32,13 @@ export const CONTACT_LINKS: Link[] = [
     icon: AtSign,
   },
   {
-    title: "GitHub",
-    link: "https://github.com/theS1LV3R",
-    icon: Github,
+    title: "Codeberg",
+    link: "https://codeberg.org/silversys",
+    icon: Codeberg,
   },
   {
     title: "Matrix",
-    link: "https://matrix.to/#/@s1lv3r:wolfgirl.pet",
+    link: "https://matrix.to/#/@sys:silversys.dev",
     icon: Matrix,
   },
   {
