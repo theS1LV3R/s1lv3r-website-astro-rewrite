@@ -28,6 +28,10 @@ jobs:
           pnpm build
           echo ::endgroup::
 
+          echo ::group::Generated files
+          find dist -type f
+          echo ::endgroup::
+
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
