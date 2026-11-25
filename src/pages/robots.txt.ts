@@ -29,9 +29,11 @@ const getRobotsTxt = (sitemapURL: URL) => `\
 # Most of the list is sourced from https://baccyflap.com/res/robots/
 
 User-agent: 2^32$
+User-agent: 4ort-nexus
 User-agent: AbliterantBot
 User-agent: AddSearchBot
 User-agent: AdsBot-Google
+User-agent: AdsBot-Google-Mobile
 User-agent: Agentic
 User-agent: AhrefsBot
 User-agent: .ai
@@ -43,9 +45,10 @@ User-agent: AI Article Writer
 User-agent: AIBot
 User-agent: AI Content Detector
 User-agent: AI Dungeon
+User-agent: Aionbot
 User-agent: aiHitBot
 User-agent: AIMatrix
-User-agent: Aionbot
+User-agent: AintelligenceBot
 User-agent: AISearchBot
 User-agent: AI Search Engine
 User-agent: AI SEO Crawler
@@ -56,6 +59,7 @@ User-agent: AI Writer
 User-agent: Alexa
 User-agent: Alpha AI
 User-agent: AlphaAI
+User-agent: AlpostBot
 User-agent: a[mazing]{42}(robot)
 User-agent: Amazon Bedrock
 User-agent: Amazonbot
@@ -70,15 +74,24 @@ User-agent: Amelia
 User-agent: Amzn-SearchBot
 User-agent: AndersPinkBot
 User-agent: Andibot
+User-agent: ant-html
 User-agent: Anthropic
 User-agent: anthropic-ai
 User-agent: AnyPicker
 User-agent: Anyword
 User-agent: Applebot
 User-agent: Applebot-Extended
+User-agent: Aranet-SearchBot
+User-agent: Are.naBot
 User-agent: Aria Browse
+User-agent: ArnorBot
 User-agent: Articoolo
+User-agent: AskRobotsBot
+User-agent: AterstodBot
+User-agent: AteveSearchSourceUrlDiscovery
 User-agent: AtlasBot
+User-agent: AtlasHub-AvailabilityCheck
+User-agent: AuruaBot
 User-agent: Automated Writer
 User-agent: Awario
 User-agent: AwarioBot
@@ -87,6 +100,8 @@ User-agent: AwarioSmartBot
 User-agent: Azure
 User-agent: BardBot
 User-agent: Barkrowler
+User-agent: BarrigazBot
+User-agent: BeansLLM-CorpusBot
 User-agent: bedrockbot
 User-agent: bigsur.ai
 User-agent: BLEXBot
@@ -97,16 +112,20 @@ User-agent: BriskBot
 User-agent: BuobeBot
 User-agent: ByteDance
 User-agent: Bytespider
+User-agent: CarpathianBot
 User-agent: CatBoost
 User-agent: Catodon
 User-agent: CCBot
 User-agent: CC-Crawler
+User-agent: CGMSearchBot
 User-agent: ChatGLM
 User-agent: ChatGLM-Spider
 User-agent: ChatGPT Agent
 User-agent: ChatGPT-User
 User-agent: ChatGPT-User/2.0
 User-agent: Chinchilla
+User-agent: ClarityBot
+User-agent: ClatterLabsSearchBot
 User-agent: Claude
 User-agent: ClaudeBot
 User-agent: Claude-SearchBot
@@ -114,7 +133,6 @@ User-agent: Claude-User
 User-agent: claude-web
 User-agent: Claude-Web
 User-agent: ClearScope
-User-agent: CloudflareBrowserRenderingCrawler
 User-agent: CloudVertexBot
 User-agent: coccocbot-web
 User-agent: Cohere
@@ -134,12 +152,15 @@ User-agent: Copilot
 User-agent: CopyAI
 User-agent: Copymatic
 User-agent: Copyscape
+User-agent: CorpusBot
 User-agent: Cotoyogi
+User-agent: CrawlCheck
 User-agent: crawler.with.dots
 User-agent: CrawlQ AI
 User-agent: Crawlspace
 User-agent: Crew AI
 User-agent: CrewAI
+User-agent: CrolBot
 User-agent: curl|sudo bash
 User-agent: DALL-E
 User-agent: DataForSeoBot
@@ -150,28 +171,40 @@ User-agent: DeepL
 User-agent: DeepMind
 User-agent: DeepSeek
 User-agent: DeepSeekBot
+User-agent: DeletedAIBot
 User-agent: Devin
 User-agent: diffbot
 User-agent: Diffbot
 User-agent: Discordbot
+User-agent: DittaBot
+User-agent: DomainStatsBot
 User-agent: Doubao AI
 User-agent: DuckAssistBot
 User-agent: Echobot Bot
 User-agent: EchoboxBot
+User-agent: ElevenBot
+User-agent: ElevenlabsCrawler
+User-agent: erguil-bot
+User-agent: ev-crawler
 User-agent: ExaSearchBot
 User-agent: Facebookbot
 User-agent: FacebookBot
 User-agent: facebookexternalhit
 User-agent: FacebookExternalHit
+User-agent: Facebot Twitterbot
+User-agent: FaceDetectionCrawlerBot
 User-agent: Factset_spyderbot
 User-agent: Falcon
 User-agent: Firecrawl
 User-agent: FirecrawlAgent
+User-agent: fluid
 User-agent: Flyriver
 User-agent: Frase AI
+User-agent: FreshLeadFinderBot
 User-agent: FriendlyCrawler
 User-agent: Fuzz Faster U Fool
 User-agent: Fuzz Faster U Fool v2.0.0
+User-agent: fzjuelich-bot
 User-agent: GazetteerBot
 User-agent: Gemini
 User-agent: Gemini-Deep-Research
@@ -181,10 +214,14 @@ User-agent: Genspark
 User-agent: Gigabot
 User-agent: GLM
 User-agent: GoGuidesCrawler
+User-agent: goodbot.sh
+User-agent: goodbot.sh research
+User-agent: goodnews-bot
 User-agent: GoogleAgent-Mariner
 User-agent: Google-CloudVertexBot
 User-agent: Google-Extended
 User-agent: Google-Firebase
+User-agent: Google-Lens
 User-agent: GoogleOther
 User-agent: GoogleOther-Image
 User-agent: GoogleOther-Video
@@ -193,6 +230,7 @@ User-agent: GPT
 User-agent: GPTBot
 User-agent: Grammarly
 User-agent: Grendizer
+User-agent: Grok%20Bot
 User-agent: Grok
 User-agent: GrokBot
 User-agent: GT Bot
@@ -203,11 +241,14 @@ User-agent: Hypotenuse AI
 User-agent: iaskspider
 User-agent: iaskspider/2.0
 User-agent: IbouBot
+User-agent: ibou-search
 User-agent: ICC-Crawler
+User-agent: IFSEBot
 User-agent: ImageGen
 User-agent: ImagesiftBot
 User-agent: img2dataset
 User-agent: imgproxy
+User-agent: IndexerBot
 User-agent: Inferkit
 User-agent: INK Editor
 User-agent: INKforall
@@ -215,21 +256,34 @@ User-agent: IntelliSeek
 User-agent: ISSCyberRiskCrawler
 User-agent: Is this a crawler?
 User-agent: JasperAI
+User-agent: Jambot
+User-agent: Joshternet-Joshbot
 User-agent: Kafkai
+User-agent: KakaoBot
 User-agent: Kangaroo
 User-agent: Kangaroo Bot
+User-agent: KeenableBot
+User-agent: KessyBot
 User-agent: Keyword Density AI
 User-agent: Kimi
 User-agent: KimiBot
 User-agent: Kimi-SearchBot
 User-agent: Knowledge
 User-agent: KomoBot
+User-agent: KuraBot
+User-agent: LanternBot
 User-agent: LinerBot
 User-agent: LinkedInBot
+User-agent: LinkosBot
+User-agent: LinkupBot
 User-agent: LLaMA
 User-agent: LLMs
+User-agent: LoadedSearchImageBot
+User-agent: LohiSoftBot
 User-agent: magpie-crawler
+User-agent: MapTheNetBot
 User-agent: MarketMuse
+User-agent: MBCrawler
 User-agent: Meltwater
 User-agent: Meta AI
 User-agent: Meta-AI
@@ -241,15 +295,23 @@ User-agent: meta-externalfetcher
 User-agent: Meta-ExternalFetcher
 User-agent: MetaTagBot
 User-agent: meta-webindexer
+User-agent: MinakiBot
+User-agent: MiniGoogleBot
 User-agent: Mistral
 User-agent: MistralAI-User
 User-agent: MistralAI-User/1.0
 User-agent: MJ12bot
+User-agent: MonacoSearchBot
 User-agent: MoonshotBot
+User-agent: MorsillaBot
+User-agent: mttr
+User-agent: mwmbl
 User-agent: MyCentralAIScraperBot
 User-agent: Narrative
+User-agent: NavCrawl
 User-agent: NeevaBot
 User-agent: netEstate Imprint Crawler
+User-agent: NetsurferBot
 User-agent: NeuralSEO
 User-agent: Neural Text
 User-agent: Nova Act
@@ -274,10 +336,12 @@ User-agent: Panscient
 User-agent: panscient.com
 User-agent: Paperlibot
 User-agent: Paraphraser.io
+User-agent: pceuropa-bot
 User-agent: peer39_crawler
 User-agent: Perplexity
 User-agent: PerplexityBot
 User-agent: Perplexity-User
+User-agent: PersonalSearchBot
 User-agent: Petalbot
 User-agent: PetalBot
 User-agent: Phindbot
@@ -288,13 +352,21 @@ User-agent: PostHogImageFetcherBot
 User-agent: prefetch-proxy
 User-agent: ProWritingAid
 User-agent: psbot
+User-agent: PublicArticleAudit
+User-agent: PublicLinkResearch
+User-agent: PulsoExplorer
 User-agent: python-requests
+User-agent: QlyzeBot
 User-agent: QualifiedBot
 User-agent: QuillBot
 User-agent: quillbot.com
 User-agent: Qwenbot
+User-agent: rawweb-bot
 User-agent: Reflectionbot
 User-agent: ReflectionBot
+User-agent: RetroDocumentResearch
+User-agent: RiverBot
+User-agent: RobotsChecker
 User-agent: RobotSpider
 User-agent: Robozilla
 User-agent: Rytr
@@ -305,6 +377,7 @@ User-agent: Scraper
 User-agent: Scrapy
 User-agent: ScriptBook
 User-agent: Seekr
+User-agent: SemanticScholarBot
 User-agent: SemrushBot
 User-agent: SemrushBot-BA
 User-agent: SemrushBot-OCOB
@@ -312,29 +385,43 @@ User-agent: SemrushBot-SWA
 User-agent: sentibot
 User-agent: Sentibot
 User-agent: SentiBot
-User-agent: SeobilityBot
 User-agent: SEO Content Machine
 User-agent: SEO Robot
+User-agent: SeobilityBot
+User-agent: SEOJuice-SearchBot
+User-agent: SERankingBacklinksBot
 User-agent: SeznamBot
 User-agent: ShapBot
 User-agent: Sidetrade
 User-agent: Sidetrade indexer bot
+User-agent: SimpleAnalyticsBot
 User-agent: Simplified AI
+User-agent: SiteAuditBot
 User-agent: Sitefinity
 User-agent: Skydancer
+User-agent: SlickBot-Web
 User-agent: SlickWrite
-User-agent: SojournerBot
+User-agent: SmartBotCrawler
 User-agent: Sonic
 User-agent: spejaren
 User-agent: Spinbot
+User-agent: SlowBot
+User-agent: SofyaBot
 User-agent: Spin Rewriter
+User-agent: spippbot
 User-agent: Stability
 User-agent: StableDiffusionBot
 User-agent: star***crawler
 User-agent: Sudowrite
 User-agent: SummalyBot
+User-agent: SupabaseEdgeRuntime
 User-agent: Super Agent
 User-agent: Surfer AI
+User-agent: Stripebot
+User-agent: studio-stills-research
+User-agent: StumbleBot
+User-agent: TalarionSearchBot
+User-agent: TechSearchBot
 User-agent: Teoma
 User-agent: TerraCotta
 User-agent: Text Blaze
@@ -345,12 +432,20 @@ User-agent: ThinkChaos
 User-agent: TikTokSpider
 User-agent: Timpibot
 User-agent: TimpiBot
+User-agent: TokenFoundryBot
 User-agent: trendictionbot
 User-agent: TurnitinBot
+User-agent: Twitterbot
+User-agent: TwoDollarContactResearch
 User-agent: VelenPublicWebCrawler
+User-agent: VexelSearchBot
 User-agent: Vidnami AI
+User-agent: VualetBot
+User-agent: WadiyaBot
 User-agent: Wagging
+User-agent: Wanderwhim-FeedBot
 User-agent: WARDBot
+User-agent: WaywardRingBot
 User-agent: Webzio
 User-agent: webzio-extended
 User-agent: Webzio-Extended
@@ -360,6 +455,7 @@ User-agent: Wordtune
 User-agent: WormsGTP
 User-agent: wpbot
 User-agent: WPBot
+User-agent: WhiskerBot
 User-agent: Writecream
 User-agent: WriterZen
 User-agent: Writescope
@@ -367,9 +463,12 @@ User-agent: Writesonic
 User-agent: xAI
 User-agent: xAI-Grok
 User-agent: xBot
+User-agent: XiaoAI-LinearTrace
+User-agent: yacybot
 User-agent: YaK
 User-agent: YandexAdditional
 User-agent: YandexAdditionalBot
+User-agent: YepBot
 User-agent: YiBot
 User-agent: Youbot
 User-agent: YouBot
@@ -377,6 +476,7 @@ User-agent: Zerochat
 User-agent: Zero GTP
 User-agent: Zhipu
 User-agent: Zimm
+User-agent: ZonaBot
 Disallow: /
 Disallow: *
 
