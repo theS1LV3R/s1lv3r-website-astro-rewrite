@@ -1,4 +1,4 @@
-name: Deploy Codeberg Pages
+name: Deploy website
 
 on:
   workflow_dispatch:
