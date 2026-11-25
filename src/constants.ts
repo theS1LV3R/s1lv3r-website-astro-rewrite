@@ -18,7 +18,7 @@ export const HIRE_ME_ENABLED: boolean = false;
 export const DESCRIPTION_TRIM_LENGTH: number = 180;
 export const TOC_MAX_NESTED: number = 3;
 
-export const RSS_AUTHOR_EMAIL: string = "me@s1lv3r.codes";
+export const RSS_AUTHOR_EMAIL: string = "sys@silversys.dev";
 
 export const CONTACT_LINKS: Link[] = [
   {
@@ -28,7 +28,7 @@ export const CONTACT_LINKS: Link[] = [
   },
   {
     title: "Email",
-    link: "mailto:me@s1lv3r.codes",
+    link: "mailto:sys@silversys.dev",
     icon: AtSign,
   },
   {
@@ -40,11 +40,6 @@ export const CONTACT_LINKS: Link[] = [
     title: "Matrix",
     link: "https://matrix.to/#/@sys:silversys.dev",
     icon: Matrix,
-  },
-  {
-    title: "Fedi",
-    link: "https://wolfgirl.pet/@s1lv3r",
-    icon: FediverseNocolor,
   },
 ];
 
