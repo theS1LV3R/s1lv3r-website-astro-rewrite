@@ -1,4 +1,4 @@
-import { render, type CollectionEntry } from "astro:content";
+import { getCollection, render, type CollectionEntry } from "astro:content";
 import jsdom from "jsdom";
 import { DESCRIPTION_TRIM_LENGTH } from "./constants";
 
@@ -40,4 +40,15 @@ export async function getDescription(post: CollectionEntry<"blog">): Promise<str
   return desc.length > DESCRIPTION_TRIM_LENGTH
     ? desc.substring(0, DESCRIPTION_TRIM_LENGTH) + "..."
     : desc;
+}
+
+/**
+ * Returns all published blog posts, sorted from most to least recent publishing date.
+ *
+ * @returns Filtered and sorted blog posts
+ */
+export async function getPublishedPosts(): Promise<Array<CollectionEntry<"blog">>> {
+  return (await getCollection("blog"))
+    .filter((post) => post.data.published)
+    .sort((a, b) => (a.data.pubDate > b.data.pubDate ? -1 : 1))
 }

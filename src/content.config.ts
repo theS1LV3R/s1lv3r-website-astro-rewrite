@@ -13,7 +13,7 @@ const blog = defineCollection({
     socials: z.array(z.object({
       site: z.string(),
       url: z.string()
-    })).optional()
+    })).optional(),
   }),
 });
 
